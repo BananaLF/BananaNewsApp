@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">新闻APP</string>
+    <string name="share">分享</string>
+    <string name="collect">收藏</string>
+    <string name="search">搜索</string>
+    <string name="top">头条</string>
+    <string name="shehui">社会</string>
+    <string name="guonei">国内</string>
+    <string name="guoji">国际</string>
+    <string name="yule">娱乐</string>
+    <string name="tiyu">体育</string>
+    <string name="junshi">军事</string>
+    <string name="keji">科技</string>
+    <string name="caijing">财经</string>
+    <string name="shishang">时尚</string>
+    <string name="joke">笑话</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+</resources>

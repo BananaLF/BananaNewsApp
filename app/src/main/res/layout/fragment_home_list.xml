@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_list_linear">
+    <!--<android.support.v7.widget.RecyclerView
+        android:id="@+id/newslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp"
+        />-->
+    <com.kevin.ultimaterecyclerview.UltimateRecyclerView
+        android:id="@+id/newslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="5dp"
+        ptr:ptrMode="pullFromStart">
+    </com.kevin.ultimaterecyclerview.UltimateRecyclerView>
+</LinearLayout>

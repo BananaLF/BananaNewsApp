@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <item android:id="@+id/action_search"
+        android:title="@string/search"
+        android:orderInCategory="70"
+        android:icon="@drawable/search"
+        />
+    <item android:id="@+id/action_collect"
+        android:title="@string/collect"
+        android:orderInCategory="80"
+        android:icon="@drawable/collect"
+        /><!--app:showAsAction="ifRoom"-->
+
+    <item android:id="@+id/action_share"
+        android:title="@string/share"
+        android:orderInCategory="90"
+        android:icon="@drawable/share"
+         />
+</menu>

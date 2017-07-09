@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.lf.newsapp"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    //butternife
+    compile 'com.jakewharton:butterknife:8.1.0'
+    apt 'com.jakewharton:butterknife-compiler:8.1.0'
+    //rx
+    //    compile 'io.reactivex.rxjava:1.2.1'
+    //    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex:rxjava:1.1.8'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    //防止Rxjava中Subscription导致内存泄漏
+    compile 'com.trello:rxlifecycle:1.0'
+    compile 'com.trello:rxlifecycle-android:1.0'
+    compile 'com.trello:rxlifecycle-components:1.0'
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.8.2@aar'
+    //Android6.0权限检测
+    //网络通信
+    compile 'com.android.support:design:25.0.0'
+    //图片加载
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //UI
+    compile 'com.kevin:ultimaterecyclerview:1.0.1'
+    //视频
+    compile 'fm.jiecao:jiecaovideoplayer:2.0'
+    compile files('libs/jsoup-1.10.2.jar')
+
+    compile 'com.wang.avi:library:1.0.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+
+    //compile 'com.github.JeroenMols:LandscapeVideoCamera:1.2.2'
+}

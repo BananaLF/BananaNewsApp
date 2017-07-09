@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    style="@style/button">
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_vertical"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-03-21 10:33"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            android:id="@+id/authorname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="封面新闻-华西都市报"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="title1111111111111111111111111"
+            android:gravity="center_vertical"
+            android:layout_above="@id/date"/>
+    </RelativeLayout>
+
+</LinearLayout>
